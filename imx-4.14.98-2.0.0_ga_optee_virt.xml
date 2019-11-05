@@ -8,11 +8,12 @@
   <remote fetch="git://github.com/openembedded" name="oe"/>
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
-  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+  <remote fetch="https://github.com/T-REE" name="T-REE"/>
 
 
   <project remote="yocto" revision="c9bd4984f8f471ca2c43052714f4413ba99cf171" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="27ca94f8a4336790ba117b4298566f6820e7e74c" name="meta-freescale" path="sources/meta-freescale"/>
+  <project remote="yocto" revision="sumo" name="meta-virtualization" path="sources/meta-virtualization"/>
 
   <project remote="oe" revision="8760facba1bceb299b3613b8955621ddaa3d4c3f" name="meta-openembedded" path="sources/meta-openembedded"/>
 
@@ -27,7 +28,7 @@
   <project remote="OSSystems" revision="75640e14e325479c076b6272b646be7a239c18aa" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="d4e7f73d04e8448d326b6f89908701e304e37d65" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="CAF" revision="8eeb420fad668b733ab95b460895e1c337c66b25" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" >
+  <project remote="T-REE" revision="dev/optee" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" >
      <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <linkfile src="imx/README" dest="README-IMXBSP"/>
   </project>
